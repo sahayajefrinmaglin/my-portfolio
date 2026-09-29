@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactpage.css">
+
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <section class="contact-page">
+
+        <div class="contact-container">
+
+            <h1>Get In Touch</h1>
+
+            <p class="contact-intro">
+                I'd love to hear from you. Feel free to reach out
+                for opportunities, collaborations, or any questions.
+            </p>
+
+            <div class="contact-content">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-info">
+
+                    <h2>Contact Information</h2>
+
+                    <p class="info-text">
+                        Feel free to connect with me.
+                    </p>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Dubai, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+971 54 155 2796</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>sahayajefrin123@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        <div>
+                            <h3>LinkedIn</h3>
+
+                            <a href="https://www.linkedin.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                www.linkedin.com/in/sahaya-jefrin-maglin07
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="contact-form">
+
+                    <h2>Send Me a Message</h2>
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+
+                            <textarea
+                                id="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit">
+                            Send Message
+                            <span>→</span>
+                        </button>
+
+                        <p id="successMessage">
+                            Message sent successfully!
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        const form = document.getElementById("contactForm");
+        const successMessage =
+            document.getElementById("successMessage");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            successMessage.style.display = "block";
+
+            form.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>

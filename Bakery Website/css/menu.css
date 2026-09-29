@@ -1,0 +1,176 @@
+ .menu{
+            display: grid;
+            /* flex-wrap: wrap; */
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+            padding: 20px;
+        }
+       .card{
+        width: 300px;
+        height:500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+        text-align: center;
+        transition: .5s;
+         flex-shrink: 0;
+       }
+       .card img{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-top: 15px;
+       }
+       .order-btn{
+        background-color: palevioletred;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+       
+       }
+       .order-btn:hover{
+        background-color: rgb(188, 48, 95);
+        border: none;
+        text-decoration: none;
+
+       }
+       .card:hover{
+        transform: translateY(-10px);
+       }
+       .card h2{
+       
+       text-align: center;
+       margin:15px 0 10px;
+       color: palevioletred;
+       
+       }
+       .card p{
+        color: palevioletred;
+        flex-grow: 1;
+       }
+       .title{
+        display: flex;
+        color: palevioletred;
+       }
+       .wedding-section{
+        margin-top: 50px;
+        padding: 20px;
+       
+       }
+       .wedding-header{
+        margin-bottom: 30px;
+        display: block;
+        text-align: center;
+       }
+       .wedding-header h1{
+        color: palevioletred;
+        font-size: 45px;
+        margin-bottom: 10px;
+       }
+       .wedding-header p{
+        color: palevioletred;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 18px;
+       }
+       .wedding-cards{
+        display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       gap:20px;
+       }
+       .menu-header{
+       
+        text-align: center;
+        display: block;
+        color: palevioletred;
+       }
+       .menu-header p{
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 18px;
+       }
+       .cupcake-header{
+        color: palevioletred;
+        display: block;
+        text-align: center;
+        
+
+        
+       }
+       .cupcake-header p{
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 18px;
+        margin-bottom: 40px;
+        
+       
+       }
+       .cupcake-cards{
+        display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       gap:20px;
+       }
+       .special-cupcake{
+        margin-top: 50px;
+        padding: 20px;
+       }
+       .special-header{
+         margin-bottom: 30px;
+        display: block;
+        text-align: center;
+       }
+       .special-header h1{
+         color: palevioletred;
+        font-size: 45px;
+        margin-bottom: 10px;
+       }
+       .special-header p{
+         color: palevioletred;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 18px;
+       }
+       .special-cards{
+         display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       gap:20px;
+       }
+       .cookies{
+        margin-top: 50px;
+        padding: 20px;
+       }
+       .cookie-header{
+         margin-bottom: 30px;
+        display: block;
+        text-align: center;
+       }
+       .cookie-header h1{
+          color: palevioletred;
+        font-size: 45px;
+        margin-bottom: 10px;
+       }
+       .cookie-header p{
+          color: palevioletred;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 18px;
+       }
+       .cookie-card{
+         display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       gap:20px;
+       }
+       

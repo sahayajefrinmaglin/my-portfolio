@@ -1,0 +1,97 @@
+.connect-section {
+    background: #8b145c;
+    padding: 80px 20px;
+    color: white;
+}
+.connect-container {
+    width: 65%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.connect-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+.connect-container > p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.8;
+    color:white;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.contact-link {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    background: white;
+    color: #8b145c;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.contact-link i {
+    font-size: 20px;
+    min-width: 35px;
+    text-align: center;
+}
+.contact-link div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-link span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact-link small {
+    font-size: 15px;
+    color: #666;
+}
+.contact-link:hover {
+    transform: translateY(-5px);
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+
+
+/* Mobile View*/
+@media (max-width: 600px) {
+
+    .connect-section {
+        padding: 65px 20px;
+    }
+
+    .connect-container {
+        width: 90%;
+    }
+
+    .connect-container h2 {
+        font-size: 30px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .contact-link {
+        width: 100%;
+
+        max-width: 350px;
+    }
+}
